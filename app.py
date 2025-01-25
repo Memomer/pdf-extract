@@ -51,7 +51,7 @@ def process_pdf():
         return render_template('error.html', message="Invalid file type. Please upload a PDF."), 400
 
     # Secure the filename and save the file
-    filename = secure_filename(file.filename)
+    filename = file.filename
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     file.save(file_path)
 
