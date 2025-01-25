@@ -1,4 +1,4 @@
 Flask==2.2.3
 pdfplumber
 gunicorn
-werkzeug==2.1.2
+werkzeug
